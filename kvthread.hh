@@ -316,7 +316,7 @@ class threadinfo {
     mutable kvtimestamp_t ts_;
 
     //enum { ncounters = (int) tc_max };
-    enum { ncounters = 0 };
+    enum { ncounters = tc_gc };
     uint64_t counters_[ncounters];
 
     void refill_pool(int nl);
